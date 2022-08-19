@@ -1,0 +1,61 @@
+body{
+    font-family: sans-serif;
+}
+
+#header{
+    height: 15%;
+    font-size: 3rem;
+    padding: 5%;
+    text-align: center;
+    background-color: lightblue;
+    margin-bottom: 15px;
+}
+
+#content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 5%;
+    background-color: rgb(241, 241, 238);
+    height: 70vh;
+}
+
+.card {
+    border: 1px solid;
+    border-radius: 3%;
+    padding: 3%;
+    display: inline-block;
+    font-family: sans-serif;
+    width: 280px;
+    height: min-content;
+}
+
+.title {
+    font-size: 1.2rem;
+    margin-bottom: 3%;
+}
+
+.actions{
+    margin-left: 10%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+button{
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    height: min-content;
+    background-color: white;
+    padding: 5%;
+    border: 1px solid;
+    border-radius: 2%;
+}
+
+
+
+
