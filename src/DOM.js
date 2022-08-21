@@ -24,21 +24,22 @@ function toDoCard(title, description, dueDate, priority) {
     myTitle.textContent = title;
     myDesc.textContent = description;
     myDue.textContent = 'Due date: ' + dueDate;
-    myPriority.textContent = priority;
-    showPriority.textContent = 'high priority';
+    myPriority.textContent = 'change priority';
+    showPriority.textContent = priority;
     showStatus.textContent = 'pending';
-    status.textContent = 'pending';
+    status.textContent = 'change status';
     remove.textContent = 'remove';
 
     card.classList.add('card');
     myTitle.classList.add('title');
     status.classList.add('status');
-
+    remove.classList.add('remove-button');
+    myPriority.classList.add('priority-button');
     status.addEventListener('click', ()=> {
-        changeStatus(status);
+        changeStatus(status, showStatus);
     });
     myPriority.addEventListener('click' , ()=> {
-        changePriority(myPriority);
+        changePriority(myPriority, showPriority);
     });
     remove.addEventListener('click', ()=>{
         removeCard(card);

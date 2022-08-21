@@ -1,9 +1,9 @@
-function changeStatus(status){
-    if (status.textContent == 'pending'){
-        status.textContent = 'completed';
+function changeStatus(status, showStatus){
+    if (showStatus.textContent == 'pending'){
+        showStatus.textContent = 'completed';
     }
     else{
-        status.textContent = 'pending';
+        showStatus.textContent = 'pending';
     }
 }
 

@@ -1,12 +1,12 @@
-function changePriority(priority){
-    if (priority.textContent == 'high'){
-        priority.textContent = 'medium';
+function changePriority(priority, showPriority){
+    if (showPriority.textContent == 'high priority'){
+        showPriority.textContent = 'medium priority';
     }
-    else if (priority.textContent == 'medium'){
-        priority.textContent = 'low';
+    else if (showPriority.textContent == 'medium priority'){
+        showPriority.textContent = 'low priority';
     }
     else{
-        priority.textContent ='high';
+        showPriority.textContent ='high priority';
     }
 }
 

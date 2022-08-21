@@ -111,6 +111,16 @@ form{
     font-size: 0.8rem;
     display: inline-block;
     margin: 5px;
+    border: 1px solid;
+}
+
+.remove-button{
+    background-color: red;
+    color: white;
+}
+
+.priority-button, .status{
+    background-color: lightyellow;
 }
 
 
