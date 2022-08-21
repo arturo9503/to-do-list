@@ -13,6 +13,8 @@ function toDoCard(title, description, dueDate, priority) {
     const myTitle = document.createElement('div');
     const myDesc = document.createElement('div');
     const myDue = document.createElement('div');
+    const showPriority = document.createElement('div');
+    const showStatus = document.createElement('div');
     const myPriority = document.createElement('button');
     const status = document.createElement('button');
     const remove = document.createElement('button');
@@ -23,6 +25,8 @@ function toDoCard(title, description, dueDate, priority) {
     myDesc.textContent = description;
     myDue.textContent = 'Due date: ' + dueDate;
     myPriority.textContent = priority;
+    showPriority.textContent = 'high priority';
+    showStatus.textContent = 'pending';
     status.textContent = 'pending';
     remove.textContent = 'remove';
 
@@ -43,6 +47,8 @@ function toDoCard(title, description, dueDate, priority) {
     card.appendChild(myTitle);
     card.appendChild(myDesc);
     card.appendChild(myDue);
+    card.appendChild(showPriority);
+    card.appendChild(showStatus);
     card.appendChild(myPriority);
     card.appendChild(status);
     card.appendChild(remove);

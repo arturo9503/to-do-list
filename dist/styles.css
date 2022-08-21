@@ -1,29 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:@1&display=swap');
+
 body{
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
 }
 
-#header{
-    height: 15%;
-    font-size: 3rem;
-    padding: 5%;
+#nav{
+    height: 100vh;
     text-align: center;
-    background-color: lightblue;
+    border: 1px solid;
     margin-bottom: 15px;
+    width: 350px;
 }
 
 #content{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    padding: 5%;
-    background-color: rgb(241, 241, 238);
-    height: 70vh;
+    border: 1px solid;
+    height: 100%;
+    padding: 15px;
 }
 
 .card {
     border: 1px solid;
     border-radius: 3%;
-    padding: 3%;
+    padding: 5px;
     display: inline-block;
     font-family: sans-serif;
     width: 280px;
@@ -31,14 +33,14 @@ body{
 }
 
 .title {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 3%;
+    font-weight: bold;
 }
 
 .actions{
-    margin-left: 10%;
-    margin-top: 5px;
-    margin-bottom: 15px;
+    border: 1px solid;
+    padding: 15px;
 }
 
 button{
@@ -54,7 +56,67 @@ form{
     padding: 5%;
     border: 1px solid;
     border-radius: 2%;
+    margin-top: 50px;
 }
+
+#main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+#main-desc{
+    font-size: 1.5rem;
+    padding: 10px;
+    font-style: italic;
+}
+
+#app-title {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+img{
+    height: 50px;
+}
+
+#create {
+    background-color: rgb(28, 179, 28);
+    color: white;
+}
+
+#show-all, #show-pending{
+    background-color: rgb(132, 132, 235);
+    color: white;
+}
+
+button{
+    border: none;
+    border-radius: 5px;
+}
+
+form{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: rgb(216, 232, 238);
+}
+
+.card > button {
+    font-size: 0.8rem;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+
+
+
 
 
 
